@@ -1,0 +1,327 @@
+!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body {
+            font-family: "Lato", sans-serif;
+            margin: 0;
+            background: #000;
+            color: #fff;
+        }
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #1a1a1a;
+            padding: 10px 20px;
+            color: white;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 3;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .menu-btn {
+            padding: 10px;
+            cursor: pointer;
+            color: white;
+            font-size: 20px;
+            background: none;
+            border: none;
+            outline: none;
+            margin-right: 2rem;
+        }
+        .sidenav {
+            height: 100%;
+            width: 0;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            right: 0;
+            background-color: #000;
+            overflow-x: hidden;
+            transition: 0.5s;
+            padding-top: 60px;
+        }
+        .sidenav a {
+            padding: 8px 8px 8px 32px;
+            text-decoration: none;
+            font-size: 25px;
+            color: #818181;
+            display: block;
+            transition: 0.3s;
+        }
+        .sidenav a:hover {
+            color: #f1f1f1;
+        }
+        .content {
+            padding: 80px 20px 20px;
+        }
+        section {
+            padding: 20px;
+            background: #1a1a1a;
+            margin: 20px 0;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        section h1 {
+            color: #4CAF50;
+            margin-bottom: 20px;
+        }
+        .profile-pic {
+            height: 200px;
+            width: 150px;
+            border-radius: 50%;
+            border: 4px solid #4CAF50;
+            object-fit: cover;
+        }
+        .skills-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .skill {
+            text-align: center;
+            margin: 20px;
+        }
+        .skill i {
+            font-size: 50px;
+            margin-bottom: 10px;
+            color: #4CAF50;
+        }
+        .project {
+            margin-bottom: 40px;
+        }
+        .project img {
+            width: 100%;
+            max-width: 600px;
+            border-radius: 10px;
+        }
+        .project h2 {
+            margin-top: 10px;
+        }
+        .project p {
+            margin: 10px 0;
+        }
+        .project a {
+            margin-right: 10px;
+            text-decoration: none;
+            color: #4CAF50;
+            border: 2px solid #4CAF50;
+            padding: 5px 10px;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+        .project a:hover {
+            background: #4CAF50;
+            color: white;
+        }
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background: #1a1a1a;
+            color: white;
+            margin-top: 20px;
+        }
+       .four
+       {
+        /*display: flex;
+            justify-content: space-around;*/
+            flex-wrap: wrap;
+           /* text-align: center;*/
+            margin: 20px;
+       }
+       .four a
+       {
+        margin-right: 10px;
+            text-decoration: none;
+           
+            padding: 5px 10px;
+            border-radius: 5px;
+            transition: 0.3s;
+
+       }
+       
+        
+        @media (max-width: 600px) {
+            .skills-container {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">K J DHRITHI</div>
+        <button class="menu-btn" onclick="toggleNav()">&#9776;</button>
+    </header>
+
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="menu-btn" onclick="toggleNav()">&times; Close</a>
+        <a href="#about"><i class="fas fa-user"></i> About</a>
+        <a href="#skills"><i class="fas fa-code"></i> Skills</a>
+        <a href="#projects"><i class="fas fa-project-diagram"></i> Project</a>
+        <a href="#resume"><i class="fas fa-file-alt"></i> Resume</a>
+        <a href="#contact"><i class="fas fa-envelope"></i> Contact</a>
+    </div>
+
+    <main class="content">
+        <div class="two" style="text-align: center;">
+            <img src="ed.jpg" alt="K J Dhrithi" class="profile-pic">
+            <p>Hello I'm</p>
+            <p class="logo">K J Dhrithi</p>
+            <p>Software Developer</p>
+            <div class="project">
+                <a href="Dhrithi Resume 2024 (5).pdf" target="_blank" download><i class="fa-solid fa-download"></i> Resume</a>
+                <a href="#contact" target="_blank"> Contact Me</a>
+            </div>
+            <div class="four" style="text-decoration: none; font-size: 40px;">
+                <a href="mailto:dhrithikj1408@gmail.com"><i style="color:red" class="fas fa-envelope"></i></a></li>
+                <a href="https://github.com/Dhrithi08/Online-Voting-System" target="_blank"><i style="color:white;" class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/k-j-dhrithi-5b4966225/" target="_blank"><i style="color:skyblue;" class="fab fa-linkedin"></i></a>
+             
+                <a href="https://leetcode.com/u/oZzdL9NQ56/" target="_blank"> <svg
+                    id="SvgjsSvg1061"
+                    width="35"
+                    height="35"
+                    
+                    xmlns="http://www.w3.org/2000/svg"
+                    version="1.1"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xmlns:svgjs="http://svgjs.com/svgjs">
+                    <defs id="SvgjsDefs1062"></defs>
+                    <g id="SvgjsG1063">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            enable-background="new 0 0 24 24"
+                            viewBox="0 0 24 24"
+                            width="100%"
+                            height="100%">
+                            <path
+                                d="M22,14.355c0-0.742-0.564-1.346-1.26-1.346H10.676c-0.696,0-1.26,0.604-1.26,1.346s0.563,1.346,1.26,1.346H20.74C21.436,15.702,22,15.098,22,14.355z"
+                                fill="#FFA500"
+                                class="color000 svgShape"></path>
+                            <path
+                                d="M3.482,18.187l4.313,4.361C8.768,23.527,10.113,24,11.598,24c1.485,0,2.83-0.512,3.805-1.494l2.588-2.637c0.51-0.514,0.492-1.365-0.039-1.9c-0.531-0.535-1.375-0.553-1.884-0.039l-2.676,2.607c-0.462,0.467-1.102,0.662-1.809,0.662s-1.346-0.195-1.81-0.662l-4.298-4.363c-0.463-0.467-0.696-1.15-0.696-1.863c0-0.713,0.233-1.357,0.696-1.824l4.285-4.38c0.463-0.467,1.116-0.645,1.822-0.645s1.346,0.195,1.809,0.662l2.676,2.606c0.51,0.515,1.354,0.497,1.885-0.038c0.531-0.536,0.549-1.387,0.039-1.901l-2.588-2.636c-0.649-0.646-1.471-1.116-2.392-1.33l-0.034-0.007l2.447-2.503c0.512-0.514,0.494-1.366-0.037-1.901c-0.531-0.535-1.376-0.552-1.887-0.038L3.482,10.476C2.509,11.458,2,12.813,2,14.311C2,15.809,2.509,17.207,3.482,18.187z"
+                                fill="#FFA500"
+                                class="color000 svgShape"></path>
+                        </svg>
+                    </g>
+                </svg></a>
+        </div>
+        </div>
+        <section id="about">
+            <h1>About Me</h1>
+            <p>Welcome to my portfolio! I'm currently pursuing MCA (Master of Computer Application) in<b> St Joseph Engineering College, Mangalore</b>. I'm a passionate software developer with expertise in <b>HTML, CSS, JavaScript, and PHP</b>. I love building dynamic and responsive web applications and am passionate about coding and problem-solving.</p>
+        </section>
+
+        <section id="skills">
+            <h1>Skills</h1>
+            <div class="skills-container">
+                <div class="skill">
+                    <i class="fab fa-js-square"></i>
+                    <p>JavaScript</p>
+                </div>
+                <div class="skill">
+                    <i class="fab fa-html5"></i>
+                    <p>HTML</p>
+                </div>
+                <div class="skill">
+                    <i class="fab fa-css3-alt"></i>
+                    <p>CSS</p>
+                </div>
+                <div class="skill">
+                    <i class="fab fa-php"></i>
+                    <p>PHP</p>
+                </div>
+                <div class="skill">
+                    <i class="fas fa-code"></i>
+                    <p>C/C++</p>
+                </div>
+                <div class="skill">
+                    <i class="fas fa-database"></i>
+                    <p>MySQL</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects">
+            <h1>Project</h1>
+            <h2>Online Voting System</h2>
+            <img src="eo.jpg" alt="Online Voting System" width="250px" height="150px">
+            <div class="project">
+               
+              
+                <p>The Online Voting System is a web application designed to facilitate voting by allowing users to cast their vote online. This platform allows users to sign up, log in, cast votes, and allows the admin to add details regarding parties and view the votes.</p><br>
+                <a href="https://github.com/Dhrithi08/Online-Voting-System" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+               <!--  <a href="https://live-demo.com" target="_blank"><i class="fas fa-external-link-alt"></i> Live Demo</a>-->
+            </div>
+        </section>
+
+        <section id="resume" >
+            <h1>Resume</h1>
+            <a href="Dhrithi Resume 2024 (5).pdf" style="text-decoration: none; font-size: 40px; color: white;" target="_blank" download><i class="fa-solid fa-download"></i></a>
+        </section>
+
+        <section id="contact">
+            <h1>Contact Me</h1>
+            <div class="four" style="text-decoration: none; font-size: 40px;">
+                <a href="mailto:dhrithikj1408@gmail.com"><i style="color:red" class="fas fa-envelope"></i></a></li>
+                <a href="https://github.com/Dhrithi08/Online-Voting-System" target="_blank"><i style="color:white;" class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/k-j-dhrithi-5b4966225/" target="_blank"><i style="color:skyblue;" class="fab fa-linkedin"></i></a>
+                <a href="https://leetcode.com/u/oZzdL9NQ56/" target="_blank"> <svg
+                    id="SvgjsSvg1061"
+                    width="35"
+                    height="35"
+                    
+                    xmlns="http://www.w3.org/2000/svg"
+                    version="1.1"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xmlns:svgjs="http://svgjs.com/svgjs">
+                    <defs id="SvgjsDefs1062"></defs>
+                    <g id="SvgjsG1063">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            enable-background="new 0 0 24 24"
+                            viewBox="0 0 24 24"
+                            width="100%"
+                            height="100%">
+                            <path
+                                d="M22,14.355c0-0.742-0.564-1.346-1.26-1.346H10.676c-0.696,0-1.26,0.604-1.26,1.346s0.563,1.346,1.26,1.346H20.74C21.436,15.702,22,15.098,22,14.355z"
+                                fill="#FFA500"
+                                class="color000 svgShape"></path>
+                            <path
+                                d="M3.482,18.187l4.313,4.361C8.768,23.527,10.113,24,11.598,24c1.485,0,2.83-0.512,3.805-1.494l2.588-2.637c0.51-0.514,0.492-1.365-0.039-1.9c-0.531-0.535-1.375-0.553-1.884-0.039l-2.676,2.607c-0.462,0.467-1.102,0.662-1.809,0.662s-1.346-0.195-1.81-0.662l-4.298-4.363c-0.463-0.467-0.696-1.15-0.696-1.863c0-0.713,0.233-1.357,0.696-1.824l4.285-4.38c0.463-0.467,1.116-0.645,1.822-0.645s1.346,0.195,1.809,0.662l2.676,2.606c0.51,0.515,1.354,0.497,1.885-0.038c0.531-0.536,0.549-1.387,0.039-1.901l-2.588-2.636c-0.649-0.646-1.471-1.116-2.392-1.33l-0.034-0.007l2.447-2.503c0.512-0.514,0.494-1.366-0.037-1.901c-0.531-0.535-1.376-0.552-1.887-0.038L3.482,10.476C2.509,11.458,2,12.813,2,14.311C2,15.809,2.509,17.207,3.482,18.187z"
+                                fill="#FFA500"
+                                class="color000 svgShape"></path>
+                        </svg>
+                    </g>
+                </svg></a>
+            
+        </div>
+        </section>
+    </main>
+<center> <footer >
+    &copy; 2024 K J Dhrithi. All rights reserved.
+</footer>
+</center>
+    
+    <script>
+        function toggleNav() {
+            const sidenav = document.getElementById("mySidenav");
+            const isOpen = sidenav.style.width === "250px";
+            sidenav.style.width = isOpen ? "0" : "250px";
+            document.querySelector('.menu-btn').innerHTML = isOpen ? '&#9776;' : '&times;';
+        }
+    </script>
+</body>
+</html>

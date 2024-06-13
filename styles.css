@@ -1,0 +1,127 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #4CAF50;
+}
+
+.menu-icon {
+    font-size: 1.5em;
+    cursor: pointer;
+    display: block;
+}
+
+#navbar {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    padding: 10px 0;
+}
+
+#navbar a {
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    display: block;
+}
+
+#navbar a:hover {
+    background-color: #575757;
+}
+
+.hidden {
+    display: none;
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+
+}
+
+  
+  .hidden a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .hidden a:hover {
+    color: #f1f1f1;
+  }
+  
+  .hidden .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  .one
+  {
+      text-align: right;
+  }
+  
+
+/* Section Styles */
+section {
+    padding: 20px;
+}
+
+.skills-container {
+    display: flex;
+    gap: 20px;
+}
+
+.skill {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.skill i {
+    font-size: 2em;
+}
+
+.skill p {
+    margin-top: 5px;
+}
+
+.project {
+    margin-bottom: 20px;
+}
+
+.project img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Media Query for Desktop */
+@media screen and (max-height: 450px) {
+    .hidden {padding-top: 15px;}
+    .hidden a {font-size: 18px;}
+  }
